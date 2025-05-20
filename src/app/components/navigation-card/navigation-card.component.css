@@ -1,0 +1,31 @@
+.cards-container{
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-rows: 20rem;
+    column-gap: 1rem;
+    align-items:center;
+    justify-content: center;
+    background-position:center center;
+    background-size: contain;
+}
+
+.CardItem {
+    height:20rem;
+    object-fit: contain;
+    object-position: center;
+}
+
+.CardItem:hover{
+   box-shadow: 15px 10px 110px #86c232b7;
+}
+
+.CardItem h1{
+    background-color:#222629;
+    padding: 7px 14px 7px 14px;
+    color:#86C232;
+    font-size: large;
+    width:.5rem;
+    border-radius: 10px;
+    vertical-align: middle;
+    display: inline !important;
+}

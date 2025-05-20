@@ -1,0 +1,56 @@
+.container {
+    display: grid;
+    grid-template-rows: 13rem 1fr 3rem;
+    row-gap: 1rem;
+}
+
+.header-section{
+   align-items: center;
+   justify-content: center;
+}
+
+.bottom-section{
+   align-items: center;
+   justify-content: center;
+      position: fixed;
+      bottom:0;
+      left:0;
+      right:0;
+}
+
+.main-body{
+   padding: 1rem 7rem 1rem 7rem;
+}
+
+h1{
+    color: #86C232;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow:2px 2px 45px #86c232cb;
+    
+}
+
+header p{
+    color: white;
+    text-align: center;
+}
+
+header{
+    padding:2rem;
+    text-align:center;
+}
+
+footer{
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+footer p{
+    text-align: center;
+    font-weight: 600;
+    font-size:1rem;
+    color: #86C232;
+}
+
+
+
+
