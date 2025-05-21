@@ -16,7 +16,7 @@
 }
 
 .CardItem:hover{
-   box-shadow: 15px 10px 110px #86c232b7;
+   box-shadow: 2px 2px 110px #86c232b7;
 }
 
 .CardItem h1{
@@ -28,4 +28,8 @@
     border-radius: 10px;
     vertical-align: middle;
     display: inline !important;
+}
+
+a{
+    text-decoration: none;
 }
