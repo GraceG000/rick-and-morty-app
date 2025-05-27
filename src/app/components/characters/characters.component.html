@@ -1,1 +1,26 @@
-<p>characters works!</p>
+
+ <div>
+    <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Gender</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+       <tbody>
+            <tr *ngFor="let character of characters; let i = index">
+            <td>{{character.id}}</td>
+            <td>{{character.name}}</td>
+            <td>{{character.Species}}</td>
+            <td>{{character.gender}}</td>
+            <td>{{character.status}}</td>
+            <td></td>
+        </tr> 
+       </tbody>
+        
+    </table>
+</div> 

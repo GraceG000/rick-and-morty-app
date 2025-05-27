@@ -5,7 +5,7 @@ import { LocationsComponent } from './components/locations/locations.component';
 import { EpisodesComponent } from './components/episodes/episodes.component';
 
 export const routes: Routes = [
-    {path: 'home', component: LandingPageComponent},
+    {path: '', component: LandingPageComponent},
     {path: 'characters', component: CharactersComponent},
     {path: 'locations', component: LocationsComponent},
     {path: 'episodes', component: EpisodesComponent}
