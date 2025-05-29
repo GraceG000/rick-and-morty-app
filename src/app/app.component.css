@@ -1,4 +1,17 @@
 .app-container{
     display:grid;
-    grid-template-rows: 2rem 1fr;
+    grid-template-rows: 3rem 1fr 3rem;
+    row-gap: 1rem;
+}
+
+footer{
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+footer p{
+    text-align: center;
+    font-weight: 600;
+    font-size:1rem;
+    color: #86C232;
+     text-shadow:2px 2px 45px #86c232cb;
 }

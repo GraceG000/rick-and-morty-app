@@ -6,3 +6,7 @@ tui-tabs{
     background: none;
     margin-bottom: .5rem;
 }
+
+button:hover{
+   color: #61892F;
+}

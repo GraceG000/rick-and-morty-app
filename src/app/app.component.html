@@ -1,8 +1,15 @@
 <div class="app-container">
-  <div>
+  <div style="position:fixed; right:0; left:0; z-index:5">
     <app-navigation-bar></app-navigation-bar>
   </div>
   <div>
     <router-outlet></router-outlet>
+  </div>
+  <div class="bottom-section" style="position: fixed; bottom: 0; left:0; right:0; z-index: 5;">
+    <div>
+      <footer>
+        <p>&copy; Grace Ghansah 2025</p>
+      </footer>
+    </div>
   </div>
 </div>

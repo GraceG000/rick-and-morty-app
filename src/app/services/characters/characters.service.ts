@@ -11,7 +11,7 @@ export class CharactersService {
   //injecting the HTTPClient Constructor...
   constructor(private http: HttpClient) {}
 
-  getAllCharacters(): Observable<any>{
-    return this.http.get("https://rickandmortyapi.com/api/character");
+  getAllCharacters(page: number): Observable<any>{
+    return this.http.get(`https://rickandmortyapi.com/api/character?page=${page}`);
   }
 }

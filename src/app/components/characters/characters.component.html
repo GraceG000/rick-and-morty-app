@@ -1,26 +1,63 @@
+<header>
+  <h1>Rick and Morty Characters</h1>
+  <p>Let's explore the characters!!!</p>
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="currentPage === -1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="20px"
+        fill="#61892F"
+      >
+        <path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z" />
+      </svg>
+    </button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="20px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#61892F"
+      >
+        <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
+      </svg>
+    </button>
+  </div>
+</header>
 
- <div>
-    <table>
-        <thead>
-            <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Species</th>
-            <th>Gender</th>
-            <th>Status</th>
-            <th>Action</th>
-        </tr>
-        </thead>
-       <tbody>
-            <tr *ngFor="let character of characters; let i = index">
-            <td>{{character.id}}</td>
-            <td>{{character.name}}</td>
-            <td>{{character.Species}}</td>
-            <td>{{character.gender}}</td>
-            <td>{{character.status}}</td>
-            <td></td>
-        </tr> 
-       </tbody>
-        
-    </table>
-</div> 
+<main>
+  <div class="container">
+    <div class="section-one">
+      
+    </div>
+
+    <div class="section-two">
+      <div *ngFor="let character of characters">
+        <div>
+          <div class="card-container">
+            <div class="title">{{ character.name }}</div>
+            <div class="image-section">
+              <img [src]="character.image" [alt]="character.name" />
+            </div>
+            <div class="details-summary">
+              <div>Species: {{ character.species }}</div>
+              <div>Gender: {{ character.gender }}</div>
+              <div>Origin: {{ character.origin.name }}</div>
+              <div>Status: {{ character.status }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Pagination Section-->
+    </div>
+
+    <div class="section-three">
+      
+    </div>
+  </div>
+</main>
+<footer></footer>
